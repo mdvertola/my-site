@@ -1,4 +1,33 @@
 .about-background{
-    background-color: gray;
+    background-color: rgb(65, 65, 65);
+    height: 100%;
+    border-radius: 15px;
+}
 
+.me{
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+}
+
+.padded-5{
+    padding: 5%;
+}
+.padded-1{
+    padding: 1%;
+}
+
+.white-text{
+    color:white;
+}
+.white-link{
+    text-decoration: none;
+    color:white
+}
+.center {
+    text-align: center;
+  }
+
+.spacer{
+    height: 30%;
 }
