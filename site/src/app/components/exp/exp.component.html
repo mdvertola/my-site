@@ -1,1 +1,15 @@
-<p>exp works!</p>
+<br>
+<h2>Work Experience</h2>
+<div *ngFor="let exp of experience">
+    <br>
+    <div class="row">
+        <div class="col-8">
+            <h4>{{exp.title}}</h4>
+            <h6>{{exp.employer}}, {{exp.location}}</h6>
+        </div>
+        <div class="col-4">
+            <h6>{{exp.time_start}}-{{exp.time_end}}</h6>
+        </div>
+        <p>{{exp.desc}}</p>
+    </div>
+</div>

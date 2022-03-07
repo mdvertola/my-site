@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/data/data.service';
 
 @Component({
   selector: 'app-about-me',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
+  about!: { name: string; bio: string; linkedInUrl: string; gitHubUrl: string; stackOverflowUrl: string; email:string; favorites: string; certifications: string; };
 
-  constructor() { }
+  constructor(private data:DataService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.about= this.data.getAboutMe()
   }
-
+  nav(link: string){
+    console.log(link)
+  }
+  mail(email:string){
+    console.log(email)
+  }
 }
