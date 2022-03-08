@@ -43,7 +43,7 @@ jobs:
           cd site
           npm install 
           ng build
-          bucket=$(jq .siteBucket ../aws/output.json | tr -d '"')
+          bucket=$(jq .siteBucket aws/output.json | tr -d '"')
           echo ${bucket}
           aws s3 rm --recursive s3://${bucket}
           aws s3 sync dist/mgmt-portal s3://${bucket} --acl public-read
