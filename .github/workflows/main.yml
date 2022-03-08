@@ -32,6 +32,7 @@ jobs:
           cd aws
           npm ci
           export STACK_NAME=${GITHUB_REF##*/}
+          cdk boostrap
           cdk deploy --outputs-file output.json --require-approval never
       
       - name: build and deploy sitte 
@@ -44,4 +45,4 @@ jobs:
           aws s3 sync dist/mgmt-portal s3://${bucket} --acl public-read
           distID=$(jq .siteDistributionID ../aws/output.json | tr -d '"')
           aws cloudfront create-invalidation --distribution-id ${distID} --paths /*
-          
+
