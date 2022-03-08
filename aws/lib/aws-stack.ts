@@ -31,10 +31,7 @@ export class AwsStack extends Stack {
       resources: [siteBucket.arnForObjects('*')],
       principals: [new iam.CanonicalUserPrincipal(siteDistOAI.cloudFrontOriginAccessIdentityS3CanonicalUserId)]
     }));
-    const deployment = new s3Deployment.BucketDeployment(this, "deployStaticWebsite", {
-      sources: [s3Deployment.Source.asset("../site/dist")],
-      destinationBucket: siteBucket
-   });
+    
     new CfnOutput(this, 'siteBucket',{value: siteBucket.bucketName})
     new CfnOutput(this, 'siteDistribution',{value: siteDistribution.distributionDomainName})
     new CfnOutput(this, 'siteDistributionID',{value: siteDistribution.distributionId})
