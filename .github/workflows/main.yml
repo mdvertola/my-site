@@ -32,7 +32,7 @@ jobs:
           cd aws
           npm ci
           export STACK_NAME=${GITHUB_REF##*/}
-          cdk boostrap
+          cdk bootstrap
           cdk deploy --outputs-file output.json --require-approval never
       
       - name: build and deploy sitte 
