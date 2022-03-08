@@ -58,7 +58,7 @@
                               "Principal": {
                                 "CanonicalUser": {
                                   "Fn::GetAtt": [
-                                    "undefinedsitedistoaiC10D038E",
+                                    "mainsitedistoaiAC94771F",
                                     "S3CanonicalUserId"
                                   ]
                                 }
@@ -100,13 +100,13 @@
               "version": "2.15.0"
             }
           },
-          "undefined-site-dist-oai": {
-            "id": "undefined-site-dist-oai",
-            "path": "AwsStack/undefined-site-dist-oai",
+          "main-site-dist-oai": {
+            "id": "main-site-dist-oai",
+            "path": "AwsStack/main-site-dist-oai",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "AwsStack/undefined-site-dist-oai/Resource",
+                "path": "AwsStack/main-site-dist-oai/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
                   "aws:cdk:cloudformation:props": {
@@ -126,13 +126,13 @@
               "version": "2.15.0"
             }
           },
-          "undefined-site-dist": {
-            "id": "undefined-site-dist",
-            "path": "AwsStack/undefined-site-dist",
+          "main-site-dist": {
+            "id": "main-site-dist",
+            "path": "AwsStack/main-site-dist",
             "children": {
               "Origin1": {
                 "id": "Origin1",
-                "path": "AwsStack/undefined-site-dist/Origin1",
+                "path": "AwsStack/main-site-dist/Origin1",
                 "constructInfo": {
                   "fqn": "constructs.Construct",
                   "version": "10.0.81"
@@ -140,7 +140,7 @@
               },
               "Resource": {
                 "id": "Resource",
-                "path": "AwsStack/undefined-site-dist/Resource",
+                "path": "AwsStack/main-site-dist/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::CloudFront::Distribution",
                   "aws:cdk:cloudformation:props": {
@@ -164,7 +164,7 @@
                               }
                             ]
                           },
-                          "id": "AwsStackundefinedsitedistOrigin163628038",
+                          "id": "AwsStackmainsitedistOrigin10850B40E",
                           "customOriginConfig": {
                             "originSslProtocols": [
                               "TLSv1.2"
@@ -175,7 +175,7 @@
                       ],
                       "defaultCacheBehavior": {
                         "pathPattern": "*",
-                        "targetOriginId": "AwsStackundefinedsitedistOrigin163628038",
+                        "targetOriginId": "AwsStackmainsitedistOrigin10850B40E",
                         "cachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
                         "compress": true,
                         "viewerProtocolPolicy": "redirect-to-https"

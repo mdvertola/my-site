@@ -23,7 +23,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/15de69ece1071bee1f6be150d038d4ded74d9b60f5f55a4d5b26728636440c7a.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/852df15d5fee89a28f3f4e1c709c25d909cd98d26baa0a92c513e1f2ad182e1e.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -33,7 +33,8 @@
           "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
           "requiresBootstrapStackVersion": 8,
           "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
-        }
+        },
+        "stackName": "main"
       },
       "dependencies": [
         "AwsStack.assets"
@@ -51,16 +52,16 @@
             "data": "sitebucketPolicy3C6A9DDF"
           }
         ],
-        "/AwsStack/undefined-site-dist-oai/Resource": [
+        "/AwsStack/main-site-dist-oai/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "undefinedsitedistoaiC10D038E"
+            "data": "mainsitedistoaiAC94771F"
           }
         ],
-        "/AwsStack/undefined-site-dist/Resource": [
+        "/AwsStack/main-site-dist/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "undefinedsitedistA6746418"
+            "data": "mainsitedist875B3C87"
           }
         ],
         "/AwsStack/siteBucket": [

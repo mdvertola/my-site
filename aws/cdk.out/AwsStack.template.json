@@ -28,7 +28,7 @@
               "Principal": {
                 "CanonicalUser": {
                   "Fn::GetAtt": [
-                    "undefinedsitedistoaiC10D038E",
+                    "mainsitedistoaiAC94771F",
                     "S3CanonicalUserId"
                   ]
                 }
@@ -56,7 +56,7 @@
         "aws:cdk:path": "AwsStack/site-bucket/Policy/Resource"
       }
     },
-    "undefinedsitedistoaiC10D038E": {
+    "mainsitedistoaiAC94771F": {
       "Type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
       "Properties": {
         "CloudFrontOriginAccessIdentityConfig": {
@@ -64,17 +64,17 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "AwsStack/undefined-site-dist-oai/Resource"
+        "aws:cdk:path": "AwsStack/main-site-dist-oai/Resource"
       }
     },
-    "undefinedsitedistA6746418": {
+    "mainsitedist875B3C87": {
       "Type": "AWS::CloudFront::Distribution",
       "Properties": {
         "DistributionConfig": {
           "DefaultCacheBehavior": {
             "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
             "Compress": true,
-            "TargetOriginId": "AwsStackundefinedsitedistOrigin163628038",
+            "TargetOriginId": "AwsStackmainsitedistOrigin10850B40E",
             "ViewerProtocolPolicy": "redirect-to-https"
           },
           "DefaultRootObject": "index.html",
@@ -105,13 +105,13 @@
                   }
                 ]
               },
-              "Id": "AwsStackundefinedsitedistOrigin163628038"
+              "Id": "AwsStackmainsitedistOrigin10850B40E"
             }
           ]
         }
       },
       "Metadata": {
-        "aws:cdk:path": "AwsStack/undefined-site-dist/Resource"
+        "aws:cdk:path": "AwsStack/main-site-dist/Resource"
       }
     },
     "CDKMetadata": {
@@ -134,14 +134,14 @@
     "siteDistribution": {
       "Value": {
         "Fn::GetAtt": [
-          "undefinedsitedistA6746418",
+          "mainsitedist875B3C87",
           "DomainName"
         ]
       }
     },
     "siteDistributionID": {
       "Value": {
-        "Ref": "undefinedsitedistA6746418"
+        "Ref": "mainsitedist875B3C87"
       }
     }
   },
