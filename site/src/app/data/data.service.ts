@@ -67,6 +67,8 @@ export class DataService {
     }
   ]
   }
-
+  public getProjects(){}
+  public getTechnologies(){}
+  public getCertifications(){}
 
 }
