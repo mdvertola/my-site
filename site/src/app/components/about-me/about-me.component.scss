@@ -1,13 +1,18 @@
+
+
 .about-background{
     background-color: rgb(65, 65, 65);
     height: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .me{
-    height: 150px;
-    width: 150px;
+    height: 75%;
+    width: 75%;
     border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
 }
 .padded-10{
     padding: 10%;
@@ -26,14 +31,32 @@
     text-decoration: none;
     color:white
 }
+
+.top{
+    padding-top: 10%;
+}
 .center {
     text-align: center;
   }
 
 .spacer{
-    height: 50%;
+    height: 40%;
 }
 .bottom{
     
     bottom: 0;
+}
+
+@media screen and (max-width: 850px) {
+    .me{
+        height: 75%;
+        width: 75%;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5%;
+    }
+    .top{
+        padding: 0%;
+    }
 }
