@@ -15,9 +15,7 @@ export class AboutMeComponent implements OnInit {
     this.about= this.data.getAboutMe()
   }
   nav(link: string){
-    console.log(link)
+    window.open(link)
   }
-  mail(email:string){
-    console.log(email)
-  }
+  
 }

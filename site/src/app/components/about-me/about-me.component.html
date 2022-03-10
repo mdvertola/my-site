@@ -4,20 +4,20 @@
             <img class="me" src="../../../assets/img/me.jpg">  
     </div>
 
-    <div class="row center">
+    <div class="row center container">
         <h2>{{about.name}}</h2>
     </div>
 
-    <div class="row center">
-        <h6 class="padded-5">{{about.bio}}</h6>
+    <div class="row center container">
+        <h6>{{about.bio}}</h6>
     </div>
 
-    <div class="row center">
+    <div class="row center container">
         <div class="col">
             <button (click)="nav(about.linkedInUrl)" type="button" class="btn btn-link btn-lg white-link"><i class='fab fa-linkedin-in'></i></button>
             <button (click)="nav(about.gitHubUrl)" type="button" class="btn btn-link btn-lg white-link"><i class='fab fa-github'></i></button>
             <button (click)="nav(about.stackOverflowUrl)" type="button" class="btn btn-link btn-lg white-link"><i class='fab fa-stack-overflow'></i></button>
-            <button (click)="mail(about.email)" type="button" class="btn btn-link btn-lg white-link"><i class='fa fa-envelope'></i></button>
+            <button type="button" class="btn btn-link btn-lg white-link"><a class="white-link" href="mailto:{{about.email}}"><i class='fa fa-envelope'></i></a></button>
         </div>
     </div>
 
