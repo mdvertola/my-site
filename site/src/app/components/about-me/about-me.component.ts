@@ -15,7 +15,7 @@ export class AboutMeComponent implements OnInit {
     this.about= this.data.getAboutMe()
   }
   nav(link: string){
-    window.open(link)
+    window.location.assign(link)
   }
   
 }
