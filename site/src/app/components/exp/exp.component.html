@@ -13,3 +13,31 @@
         <p>{{exp.desc}}</p>
     </div>
 </div>
+<br>
+<h2>Certifications</h2>
+<div *ngFor="let cert of certifications">
+    <br>
+    <div class="row">
+        <div class="col-8">
+            <h6>{{cert.institution}}, {{cert.certification}}</h6>
+        </div>
+        
+        
+    </div>
+</div>
+<br>
+<h2>Education</h2>
+<div *ngFor="let edu of education">
+    <br>
+    <div class="row">
+        <div class="col-8">
+            <h4>{{edu.major}}, {{edu.degree}}</h4>
+            <h6>{{edu.institution}}, {{edu.location}}</h6>
+        </div>
+        <div class="col-4">
+            <h6>{{edu.time_start}}-{{edu.time_end}}</h6>
+        </div>
+        <p>{{edu.awards}}</p>
+        <p>GPA:{{edu.gpa}}</p>
+    </div>
+</div>

@@ -67,8 +67,69 @@ export class DataService {
     }
   ]
   }
-  public getProjects(){}
-  public getTechnologies(){}
-  public getCertifications(){}
+
+  public getTechnologies(){
+    return []
+  }
+  public getCertifications(){
+    return [
+      { "institution":"CompTIA",
+        "certification":"Security +",
+        "time_awarded":"",
+        "time_exp":"",
+        "grade":"",
+        "link":""
+      },
+      { "institution":"AWS",
+        "certification":"Solutions Architect Associate",
+        "time_awarded":"",
+        "time_exp":"",
+        "grade":"",
+        "link":""
+      },
+    ]
+  }
+  public getEducation(){
+    return [
+      { "institution":"University of Arizona",
+        "location":"Tucson, AZ",
+        "major":"Management Information Systems",
+        "degree":"M.Sc",
+        "time_start":"Aug 2020",
+        "time_end":"Dec 2021",
+        "gpa":"3.80",
+        "awards":"AZSecure Scholarship for Industry"
+      },
+      { "institution":"University of Arizona",
+        "location":"Tucson, AZ",
+        "major":"Management Information Systems",
+        "degree":"B.Sc",
+        "time_start":"Aug 2016",
+        "time_end":"May 2020",
+        "gpa":"3.65",
+        "awards":"Focus: Cyber Security"
+      },
+      { "institution":"University of Arizona",
+        "location":"Tucson, AZ",
+        "major":"Business Economics",
+        "degree":"B.Sc",
+        "time_start":"Aug 2016",
+        "time_end":"May 2020",
+        "gpa":"3.65",
+        "awards":"Focus: Quantative Economics & Econometrics"
+      },
+    ]
+  }
+  // I would like to somehow go get the preview for the link instead of requiring image
+  public getProjects(){
+    return [
+      { "title":"",
+        "desc":"",
+        "link":"",
+        "image":""
+      }
+    ]
+  }
+  
 
 }

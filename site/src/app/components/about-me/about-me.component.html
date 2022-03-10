@@ -1,15 +1,15 @@
-<div class="about-background white-text padded-1">
+<div class="about-background white-text">
     
     <div class="row top">
             <img class="me" src="../../../assets/img/me.jpg">  
     </div>
 
     <div class="row center">
-        <h4>{{about.name}}</h4>
+        <h2>{{about.name}}</h2>
     </div>
 
     <div class="row center">
-        <p>{{about.bio}}</p>
+        <h6 class="padded-5">{{about.bio}}</h6>
     </div>
 
     <div class="row center">
@@ -20,4 +20,5 @@
             <button (click)="mail(about.email)" type="button" class="btn btn-link btn-lg white-link"><i class='fa fa-envelope'></i></button>
         </div>
     </div>
+
 </div>

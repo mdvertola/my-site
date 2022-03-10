@@ -43,18 +43,16 @@
     height: 40%;
 }
 .bottom{
-    
     bottom: 0;
 }
 
 @media screen and (max-width: 850px) {
     .me{
-        height: 75%;
-        width: 75%;
+        height: 50%;
+        width: 50%;
         border-radius: 50%;
         margin-left: auto;
         margin-right: auto;
-        padding: 5%;
     }
     .top{
         padding: 0%;

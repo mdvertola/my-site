@@ -1,6 +1,11 @@
-<div class="container">
+<div *ngIf="!mobile"class="container">
     <div class="row">
         <div class="col-5"><app-about-me></app-about-me></div>
         <div class="col-7"><app-exp></app-exp></div>
     </div>
+</div>
+
+<div *ngIf="mobile"class="container">
+    <app-about-me class="about"></app-about-me>
+    <app-exp></app-exp>
 </div>
